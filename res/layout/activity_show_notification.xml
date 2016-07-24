@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/title_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/element_text_title"
+	    android:gravity="center_vertical"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="8dp"
+	    android:text="Good Luck with TOEFL - Notification"
+	    android:textColor="#ffffff"
+	    android:textSize="15sp"
+	    android:textStyle="bold" />
+
+		<View
+			android:id="@+id/view_seperator_1"
+		    android:background="#223344"
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp" />
+		
+	<ScrollView
+    	android:id="@+id/scrollView"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:padding="10dp" >
+    	
+    	<LinearLayout
+    	    android:id="@+id/LinearLayout_all"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical" >
+
+    	    <LinearLayout
+    	        android:id="@+id/LinearLayout_soundVolume_title"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:orientation="horizontal" >
+
+    	        <ImageView
+    	            android:id="@+id/imageView1"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginBottom="10dp"
+    	            android:adjustViewBounds="true"
+    	            android:src="@drawable/logo" />
+
+    	    </LinearLayout>
+
+    	    <TextView
+    	        android:id="@+id/body"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginTop="5dp"
+    	        android:lineSpacingExtra="3dp"
+    	        android:text="“By recording your dreams and goals on paper, you set in motion the process of becoming the person you most want to be. Put your future in good hands — your own.”"
+    	        android:textAppearance="?android:attr/textAppearanceSmall"
+    	        android:textSize="15sp" />
+
+    	    <TextView
+    	        android:id="@+id/author"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_gravity="right"
+    	        android:layout_marginTop="10dp"
+    	        android:text="– Mark Victor Hansen"
+    	        android:textStyle="bold|italic" />
+
+    	    <View
+    	        android:id="@+id/view_seperator_2"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="1dp"
+    	        android:layout_marginBottom="10dp"
+    	        android:layout_marginTop="10dp"
+    	        android:background="#223344" />
+
+    	    <Button
+    	        android:id="@+id/button_thanks"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_margin="5dp"
+    	        android:background="@drawable/element_challenge_answer"
+    	        android:text="Thanks" />
+    	</LinearLayout>
+
+	</ScrollView>
+ </LinearLayout>

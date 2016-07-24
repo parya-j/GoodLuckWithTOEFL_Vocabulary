@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Good Luck - Vocabluary</string>
+    <string name="action_settings">Settings</string>
+    <string name="Lesson">Lesson</string>
+    <string name="Word">Word</string>
+    <string name="empty">Empty</string>
+    <string name="Definition">Definition</string>
+    <string name="Phonetic">Phonetic</string>
+    <string name="Persian_Meaning">Persian Meaning</string>
+    <string name="Synonyms">Synonyms</string>
+    <string name="Title">Title</string>
+    <string name="Vocabulary">Vocabulary</string>
+    <string name="Challenge">Challenge</string>
+    <string name="About">About</string>
+    <string name="Paragraphs">Paragraphs</string>
+    <string name="PlayIt">Play it</string>
+    <string name="GoodLuck">Good Luck</string>
+    <string name="Score">Score</string>
+    <string name="Next">Next</string>
+    <string name="you_earn_lost_points">You earn/lose: 50 points</string>
+    <string name="Examples">Examples</string>
+    <string name="PartOfSpeech">Part of Speech</string>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_title_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/element_text_title_red"
+        android:gravity="center"
+        android:text="@string/GoodLuck"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/highlighted_word"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/element_asked_word"
+        android:gravity="center"
+        android:text="disadvantageous"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LL_Up_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highlighted_word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/text_word_first"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/element_challenge_answer"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/Word"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_word_second"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/element_challenge_answer"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/Word"
+            android:textSize="20sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Down_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highlighted_word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/text_word_third"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/element_challenge_answer"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/Word"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_word_forth"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/element_challenge_answer"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/Word"
+            android:textSize="20sp" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title_red"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Score: 120"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_earn_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LL_Down_words"
+        android:layout_below="@+id/LL_Down_words"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/you_earn_lost_points"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_next"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/text_earn_points"
+        android:layout_alignBottom="@+id/text_earn_points"
+        android:layout_alignRight="@+id/LL_Down_words"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/element_challenge_next"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/Next"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_question_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/LL_Down_words"
+        android:layout_alignTop="@+id/text_earn_points"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Which word is closest in meaning with highlighted word?"
+        android:textSize="17sp" />
+
+</RelativeLayout>

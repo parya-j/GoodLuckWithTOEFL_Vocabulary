@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/element_btn_lesson">
+
+    <ImageView
+        android:id="@+id/imgProfilephoto"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/game_chip" />
+
+    <Button
+        android:id="@+id/go_lesson"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:text="@string/Lesson"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/go_lesson"
+        android:layout_alignBottom="@+id/go_lesson"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="#961013"
+        android:gravity="right|center_vertical"
+        android:padding="7dp"
+        android:text="@string/PlayIt"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

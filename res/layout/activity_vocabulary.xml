@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+          android:id="@android:id/tabhost">
+         
+        <LinearLayout 
+                android:id="@+id/LinearLayout_tabs"
+                android:orientation="vertical" 
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+                
+	            <TextView
+	                android:id="@+id/title_text"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/element_text_title"
+	                android:gravity="center_vertical"
+	                android:paddingBottom="8dp"
+	                android:paddingLeft="10dp"
+	                android:paddingTop="8dp"
+	                android:text="@string/Title"
+	                android:textColor="#ffffff"
+	                android:textSize="15sp"
+	                android:textStyle="bold" />
+	            
+		        <View
+		            android:id="@+id/view_seperator"
+		            android:background="#223344"
+		            android:layout_width="fill_parent"
+		            android:layout_height="1dp" />
+            
+                <TabWidget 
+                    android:id="@android:id/tabs"
+                    android:layout_height="wrap_content" 
+                    android:layout_width="fill_parent"
+                    android:background="#e9f3f3">
+                </TabWidget>
+                
+                <FrameLayout 
+                    android:id="@android:id/tabcontent"
+                    android:layout_height="fill_parent"
+                     android:layout_width="fill_parent">
+                </FrameLayout>
+                
+        </LinearLayout>
+
+</TabHost>

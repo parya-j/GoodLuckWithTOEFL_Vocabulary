@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/title_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/element_text_title"
+	    android:gravity="center_vertical"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="8dp"
+	    android:text="Good Luck with TOEFL - Send Feedback"
+	    android:textColor="#ffffff"
+	    android:textSize="15sp"
+	    android:textStyle="bold" />
+
+		<View
+			android:id="@+id/view_seperator_1"
+		    android:background="#223344"
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp" />
+		
+	<ScrollView
+    	android:id="@+id/scrollView"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:padding="10dp" >
+    	
+    	<LinearLayout
+    	    android:id="@+id/LinearLayout_all"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical" >
+
+    		<TextView
+    		    android:id="@+id/author"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginTop="5dp"
+    		    android:text="Please enter your email, so we can be in touch with you."
+    		    android:textAppearance="?android:attr/textAppearanceSmall"
+    		    android:textSize="12sp" />
+
+    	    <LinearLayout
+    	        android:id="@+id/LinearLayout_soundVolume_title"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:orientation="horizontal" >
+
+    	        <EditText
+    	            android:id="@+id/edit_text_email"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_weight="1"
+    	            android:ems="10"
+    	            android:hint="example@email.com"
+    	            android:inputType="textEmailAddress" >
+
+    	            <requestFocus />
+    	        </EditText>
+    	    </LinearLayout>
+
+    	    <TextView
+    	        android:id="@+id/body"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginTop="5dp"
+    	        android:text="Please let us know what is your opinion about this application and how we can improve it for next updates."
+    	        android:textAppearance="?android:attr/textAppearanceSmall"
+    	        android:textSize="12sp" />
+
+    	    <EditText
+    	        android:id="@+id/edit_text_message"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginBottom="5dp"
+    	        android:layout_marginTop="5dp"
+    	        android:layout_weight="1.09"
+    	        android:ems="10"
+    	        android:gravity="top"
+    	        android:hint="Type your message here.."
+    	        android:inputType="textMultiLine"
+    	        android:minLines="5"
+    	        android:padding="10dp"
+    	        android:textSize="15sp" />
+
+    	    <View
+    	        android:id="@+id/view_seperator_2"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="1dp"
+    	        android:layout_marginBottom="10dp"
+    	        android:layout_marginTop="10dp"
+    	        android:background="#223344" />
+
+    	    <Button
+    	        android:id="@+id/button_send"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_margin="5dp"
+    	        android:background="@drawable/element_challenge_answer"
+    	        android:text="Send Feedback" />
+
+    	    <TextView
+    	        android:id="@+id/text_view_serverMessage"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_gravity="center"
+    	        android:gravity="center"
+    	        android:maxLines="3"
+    	        android:text="Message"
+    	        android:visibility="invisible" />
+
+    	</LinearLayout>
+
+	</ScrollView>
+ </LinearLayout>
